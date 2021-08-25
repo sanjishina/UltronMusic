@@ -214,7 +214,7 @@ async def yplay(_, message: Message):
         duration = round(info["duration"] / 60)
         title= info["title"]
         if int(duration) > DURATION_LIMIT:
-            k=await message.reply_text(f"❌ Videos longer than {DURATION_LIMIT} minute(s) aren't allowed, the provided video is {duration} minute(s)")
+            k=await message.reply_text(f"❌ Videos longers than {DURATION_LIMIT} minute(s) aren't allowed, the provided video is {duration} minute(s)")
             await um.delete(k)
             await um.delete(message)
             return
