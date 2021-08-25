@@ -70,7 +70,7 @@ async def yplay(_, message: Message):
     if ADMIN_ONLY == "Y":
         admins = await um.get_admins(CHAT)
         if message.from_user.id not in admins:
-            m=await message.reply_sticker("CAADBQADsQIAAtILIVYld1n74e3JuQI")
+            m=await message.reply_sticker("CAADBQADUAIAAteN2Fa-jHI7eaZh1gI")
             await um.delete(m)
             await um.delete(message)
             return
@@ -281,7 +281,7 @@ async def deezer(_, message):
     if ADMIN_ONLY == "Y":
         admins = await um.get_admins()
         if message.from_user.id not in admins:
-            k=await message.reply_sticker("CAADBQADsQIAAtILIVYld1n74e3JuQI")
+            k=await message.reply_sticker("CAADBQADUAIAAteN2Fa-jHI7eaZh1gI")
             await um.delete(k)
             await um.delete(message)
             return
@@ -454,7 +454,7 @@ async def skip_track(_, m: Message):
                 if 2 <= i <= (len(playlist) - 1):
                     audio = f"{playlist[i][1]}"
                     playlist.pop(i)
-                    text.append(f"{emoji.WASTEBASKET} Succesfully Removed from Playlist- {i}. **{audio}**")
+                    text.append(f"{emoji.WASTEBASKET} Succesfully Removed from Playlist reii- {i}. **{audio}**")
                 else:
                     text.append(f"{emoji.CROSS_MARK} You Cant Skip First Two Songs- {i}")
             k=await m.reply_text("\n".join(text))
